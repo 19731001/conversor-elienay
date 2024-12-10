@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Unidades</h1>
+    </header>
+    <main>
+        <section class="converter" id="length-converter">
+            <h2>Conversão de Comprimento</h2>
+            <label for="km">Quilômetros:</label>
+            <input type="number" id="km" placeholder="Insira o valor em km">
+            <button onclick="convertKmToMeters()">Converter para Metros</button>
+            <label for="meters">Metros:</label>
+            <input type="number" id="meters" placeholder="Insira o valor em metros">
+            <button onclick="convertMetersToKm()">Converter para Quilômetros</button>
+        </section>
+
+        <section class="converter" id="temperature-converter">
+            <h2>Conversão de Temperatura</h2>
+            <label for="celsius">Celsius:</label>
+            <input type="number" id="celsius" placeholder="Insira o valor em °C">
+            <button onclick="convertCelsiusToFahrenheit()">Converter para Fahrenheit</button>
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Insira o valor em °F">
+            <button onclick="convertFahrenheitToCelsius()">Converter para Celsius</button>
+        </section>
+
+        <section class="converter" id="weight-converter">
+            <h2>Conversão de Peso</h2>
+            <label for="kg">Quilogramas:</label>
+            <input type="number" id="kg" placeholder="Insira o valor em kg">
+            <button onclick="convertKgToPounds()">Converter para Libras</button>
+            <label for="pounds">Libras:</label>
+            <input type="number" id="pounds" placeholder="Insira o valor em libras">
+            <button onclick="convertPoundsToKg()">Converter para Quilogramas</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
